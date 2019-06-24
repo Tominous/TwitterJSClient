@@ -80,7 +80,7 @@ describe('Twitter', function () {
             function (tweet) {
 				tweet = JSON.parse(tweet);
                 expect(tweet.id_str).toEqual(params.id);
-//                expect(tweet.id).toEqual(data.id);
+                expect(tweet.id).toEqual(data.id);
                 done();
             }
         );
